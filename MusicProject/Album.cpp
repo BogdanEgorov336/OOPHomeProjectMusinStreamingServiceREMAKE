@@ -44,9 +44,9 @@ void Album::setAlbumName(string name) {
 	albumName = name;
 }
 
-int Album::getAlbumLengthInMin() {
+double Album::getAlbumLengthInMin() {
 
-	int length = 0;
+	double length = 0;
 
 	for (int i = 0; i < list.getSize(); i++) {
 
