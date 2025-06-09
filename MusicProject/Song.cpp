@@ -7,6 +7,9 @@ Song::Song(string name) : Song(name, "Unknown", "Is not defined", 0.0, 0) {};
 Song::Song(string name, double lengthInMin) 
 	: Song(name, "Unknown", "Is not defined", lengthInMin, 0) {};
 
+Song::Song(string name, string bandName, string albumName)
+	: Song(name, bandName, albumName, 0.0, 0) {};
+
 Song::Song(string name, double lengthInMin, unsigned long long totalPlays)
 	: Song(name, "Unknown", "Is not defined", lengthInMin, totalPlays) {};
 

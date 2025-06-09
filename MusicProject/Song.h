@@ -3,7 +3,7 @@
 
 class Song {
 
-protected:
+private:
 
 	//parameters
 	string name;
@@ -18,6 +18,7 @@ public:
 	Song();
 	Song(string name);
 	Song(string name, double lengthInMin);
+	Song(string name, string bandName, string albumName);
 	Song(string name, double lengthInMin, unsigned long long totalPlays);
 	Song(string name, string bandName, string albumName,
 		double lengthInMin, unsigned long long totalPlays);

@@ -3,7 +3,7 @@
 
 class SongList {
 
-protected:
+private:
 
 	Song* list;
 	int size;
@@ -11,6 +11,7 @@ protected:
 public:
 
 	SongList();
+	SongList(Song* list, int size);
 	~SongList();
 
 	void add(Song song);

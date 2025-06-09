@@ -6,6 +6,12 @@ SongList::SongList() {
 	size = 0;
 }
 
+SongList::SongList(Song* list, int size) {
+	
+	this->list = list;
+	this->size = size;
+}
+
 SongList::~SongList() {
 
 	clear();
