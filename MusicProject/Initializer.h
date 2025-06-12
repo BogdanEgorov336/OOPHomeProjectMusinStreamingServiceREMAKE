@@ -1,5 +1,5 @@
 #pragma once
-#include "Song.h"
+#include "Album.h"
 
 class Initializer {
 

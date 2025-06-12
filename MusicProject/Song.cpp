@@ -74,5 +74,6 @@ string Song::toString() {
 		+ "\nAlbum name: " + albumName
 		+ "\nBand name: " + bandName
 		+ "\nLength: " + to_string(lengthInMin)
-		+ "\nTotal plays: " + to_string(totalPlays);
+		+ "\nTotal plays: " + to_string(totalPlays)
+		+ "\n\n";
 }

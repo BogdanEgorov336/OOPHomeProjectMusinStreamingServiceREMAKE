@@ -6,7 +6,11 @@ Queue::Queue() {
 	size = 0;
 }
 
-Queue::Queue(Song* list, int size) : Queue(list, size) {};
+Queue::Queue(Song* queue, int size)  {
+
+	this->queue = queue;
+	this->size = size;
+};
 
 Queue::~Queue() {
 

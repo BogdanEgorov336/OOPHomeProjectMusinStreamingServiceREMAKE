@@ -80,7 +80,7 @@ Song SongList::get(int index) {
 		return list[index];
 	}
 
-	return Song();
+	return Song("Error");
 }
 
 void SongList::set(int index, Song song) {

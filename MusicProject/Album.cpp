@@ -2,16 +2,46 @@
 
 Album::Album() {}
 
-Album::Album(Song* list, int count) {
+Album::Album(Song* list, int count, string albumName) {
 
 	if (count > 0 && list != nullptr) {
 
 		for (int i = 0; i < count; i++) {
-			
+
 			add(list[i]);
 		}
 	}
 
+	this->albumName = albumName;
+}
+
+Album::Album(SongList list) {
+
+	if (list.getSize() > 0 && !list.isEmpty()) {
+
+		for (int i = 0; i < list.getSize(); i++) {
+
+			add(list.get(i));
+		}
+	}
+}
+
+Album::Album(SongList list, string albumName) {
+
+	if (list.getSize() > 0 && !list.isEmpty()) {
+
+		for (int i = 0; i < list.getSize(); i++) {
+
+			add(list.get(i));
+		}
+	}
+
+	this->albumName = albumName;
+}
+
+Album::Album(string albumName) {
+
+	this->albumName = albumName;
 }
 
 Album::~Album() {}
@@ -32,8 +62,46 @@ void Album::remove(int index) {
 	list.remove(index);
 }
 
-string Album::toString() {
-	return list.toString();
+string Album::toStringShort() {
+
+	string s = "There's no any songs there.";
+
+	if (!list.isEmpty()) {
+
+		s = "";
+
+		int size = list.getSize();
+
+		for (int i = 0; i < size; i++) {
+
+			s += "Name: " + list.get(i).getName()
+				+ "\nTotal plays: " + to_string(list.get(i).getTotalPlays())
+				+ "\n\n";
+
+		}
+	}
+
+	return s;
+}
+
+string Album::toStringFull() {
+
+	string s = "There's no any songs there.";
+
+	if (!list.isEmpty()) {
+
+		s = "";
+
+		int size = list.getSize();
+
+		for (int i = 0; i < size; i++) {
+
+			s += list.get(i).toString();
+		}
+
+	}
+
+	return s;
 }
 
 string Album::getAlbumName() {

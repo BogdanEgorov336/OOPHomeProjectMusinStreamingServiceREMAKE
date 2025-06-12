@@ -1,5 +1,5 @@
 #pragma once
-#include "Song.h"
+#include "Songlist.h"
 
 class Queue {
 
@@ -11,7 +11,7 @@ private:
 public: 
 
 	Queue();
-	Queue(Song* list, int size);
+	Queue(Song* queue, int size);
 	~Queue();
 
 	void enqueue(Song song);

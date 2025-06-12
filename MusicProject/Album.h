@@ -11,7 +11,10 @@ private:
 public:
 
 	Album();
-	Album(Song* list, int count);
+	Album(string albumName);
+	Album(Song* list, int count, string albumName);
+	Album(SongList list);
+	Album(SongList list, string albumName);
 	~Album();
 
 	void add(Song song);
@@ -20,7 +23,8 @@ public:
 	Song get(int index);
 	void set(int index, Song song);
 
-	string toString();
+	string toStringShort();
+	string toStringFull();
 
 	string getAlbumName();
 	void setAlbumName(string albumName);
