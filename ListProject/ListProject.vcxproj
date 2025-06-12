@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2600fa8b-5917-4690-ba92-79765702bb05}</ProjectGuid>
-    <RootNamespace>MusicProject</RootNamespace>
+    <ProjectGuid>{451af325-6b26-4167-8768-9580cac34225}</ProjectGuid>
+    <RootNamespace>ListProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,18 +123,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Album.h" />
-    <ClInclude Include="Initializer.h" />
-    <ClInclude Include="Main.h" />
-    <ClInclude Include="Song.h" />
-    <ClInclude Include="SongList.h" />
+    <ClCompile Include="..\MusicProject\Queue.cpp" />
+    <ClCompile Include="ArrayList.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Album.cpp" />
-    <ClCompile Include="Initializer.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Song.cpp" />
-    <ClCompile Include="SongList.cpp" />
+    <ClInclude Include="..\MusicProject\Queue.h" />
+    <ClInclude Include="ArrayList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

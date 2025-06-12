@@ -1,5 +1,4 @@
 #include "Initializer.h"
-#include "Queue.h"
 #include "SongList.h"
 #include "Album.h"
 
@@ -15,13 +14,7 @@ int main() {
 		initializer.init(list[i]);
 	}
 
-	SongList songlist{ list, 3 };
-	//Initializer initializer;
-
-	//for (int i = 0; songlist.getSize(); i++) {
-
-	//	initializer.init(songlist.get(i));
-	//}
+	SongList songlist{ list, size };
 
 	Album album{ songlist };
 

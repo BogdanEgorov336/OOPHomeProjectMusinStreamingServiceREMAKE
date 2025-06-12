@@ -15,37 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Song.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Main.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Initializer.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Album.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="SongList.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
+    <ClCompile Include="..\MusicProject\Queue.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayList.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Song.cpp">
-      <Filter>Файлы ресурсов</Filter>
-    </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Файлы ресурсов</Filter>
-    </ClCompile>
-    <ClCompile Include="Initializer.cpp">
-      <Filter>Файлы ресурсов</Filter>
-    </ClCompile>
-    <ClCompile Include="Album.cpp">
-      <Filter>Файлы ресурсов</Filter>
-    </ClCompile>
-    <ClCompile Include="SongList.cpp">
-      <Filter>Файлы ресурсов</Filter>
-    </ClCompile>
+    <ClInclude Include="..\MusicProject\Queue.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayList.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
